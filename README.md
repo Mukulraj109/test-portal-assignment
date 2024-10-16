@@ -40,10 +40,11 @@ A **mock test portal** built using **React** and **Tailwind CSS**, which allows 
      npm install
      Start the development server:
 
-   ```bash
+```bash
     Copy code
     npm start
     Open in your browser: Navigate to http://localhost:3000 to view the application.
+```
 
 🛠️ Tech Stack
    Frontend Framework: React.js
