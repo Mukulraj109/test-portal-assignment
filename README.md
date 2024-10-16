@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 📝 Test Portal - Frontend Intern Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **mock test portal** built using **React** and **Tailwind CSS**, which allows users to answer multiple-choice questions, navigate between them, and view a summary of their answers. This portal demonstrates essential frontend concepts, including **state management**, **dynamic UI updates**, and **responsive design**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📁 Project Structure
 
-### `npm start`
+/src │── /components │ ├── QuestionDisplay.js # Displays each question with options │ ├── QuestionLegend.js # Sidebar legend to navigate between questions │ ├── SubmitSummary.js # Displays a summary of user’s answers │── /data │ └── questions.json # Mock question data in JSON format │── App.js # Centralized state and routing logic │── index.css # Custom CSS (Tailwind CSS configuration) │── index.js # Application entry point
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dynamic Question Navigation:** 
+  - Users can move between questions using **Next** and **Previous** buttons.
+  - **Legend component** allows direct navigation to any question.
+- **State Management:** 
+  - Tracks selected answers using React's `useState`.
+  - Current question and answers are dynamically updated.
+- **Color-coded Question Legend:** 
+  - **Green** for answered questions, **Red** for unanswered, and **Yellow** for the current question.
+- **Submit Summary Screen:** 
+  - Displays a summary of user responses after submission.
+  - Users can return to the test to modify their answers before final submission.
+---
 
-### `npm run build`
+## 💻 How to Run the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Mukulraj109/test-portal-assignment.git
+   cd test-portal
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+     Copy code
+     npm install
+     Start the development server:
 
-### `npm run eject`
+   ```bash
+    Copy code
+    npm start
+    Open in your browser: Navigate to http://localhost:3000 to view the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠️ Tech Stack
+   Frontend Framework: React.js
+   Styling: Tailwind CSS
+   State Management: React useState for local state
+   Mock Data: JSON file for questions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
